@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Generator for Salesforce Lightning",
   "main": "generator/app/index.js",
-  "repository": "npm/npm",
+  "repository": "https://github.com/jonathanconway/generator-sflightning.git",
   "keywords": [
     "salesforce",
     "lightning",
