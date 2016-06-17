@@ -1,6 +1,6 @@
 {
   "name": "generator-sflightning",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generator for Salesforce Lightning",
   "main": "generator/app/index.js",
   "repository": "https://github.com/jonathanconway/generator-sflightning.git",
