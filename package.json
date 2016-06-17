@@ -2,20 +2,48 @@
   "name": "generator-sflightning",
   "version": "0.1.1",
   "description": "Generator for Salesforce Lightning",
-  "main": "generator/app/index.js",
-  "repository": "https://github.com/jonathanconway/generator-sflightning.git",
-  "keywords": [
-    "salesforce",
-    "lightning",
-    "generator"
-  ],
+  "homepage": "https://github.com/jonathanconway/generator-sflightning",
   "author": "Jonathan Conway",
-  "license": "MIT",
-  "dependencies": {
-    "yeoman-generator": "^0.23.4"
-  },
   "files": [
     "generator/app",
     "generator/component"
-  ]
+  ],
+  "main": "generator/app/index.js",
+  "keywords": [
+    "salesforce",
+    "lightning",
+    "generator",
+    "yeoman-generator"
+  ],
+  "repository": "https://github.com/jonathanconway/generator-sflightning.git",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^0.23.0",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.0"
+  },
+  "devDependencies": {
+    "yeoman-test": "^1.0.0",
+    "yeoman-assert": "^2.0.0",
+    "eslint": "^2.1.0",
+    "eslint-config-xo-space": "^0.13.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-nsp": "^2.1.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  }
 }
