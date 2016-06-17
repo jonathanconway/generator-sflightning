@@ -1,0 +1,21 @@
+{
+  "name": "generator-sflightning",
+  "version": "0.1.0",
+  "description": "Generator for Salesforce Lightning",
+  "main": "generator/app/index.js",
+  "repository": "npm/npm",
+  "keywords": [
+    "salesforce",
+    "lightning",
+    "generator"
+  ],
+  "author": "Jonathan Conway",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^0.23.4"
+  },
+  "files": [
+    "generator/app",
+    "generator/component"
+  ]
+}
