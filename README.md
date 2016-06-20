@@ -1,5 +1,7 @@
 # generator-sflightning
 
+![Lil Jon](https://i.ytimg.com/vi/Wx3-cfE-6is/maxresdefault.jpg)
+
 # About
 
 Generator for Salesforce Lightning Components
