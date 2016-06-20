@@ -1,0 +1,14 @@
+<aura:documentation>
+    <aura:description >
+        <p><%= whatItDoes %></p>
+        <p style="text-decoration:underline">Invocation:</p>
+        <pre>
+            &lt;c:<%= componentName %> &gt;
+        </pre>
+    </aura:description>
+    <aura:example  name="<%= componentName %>Example1"
+                  ref="c:<%= componentName %>"
+                  label="Simple Instantiation">
+        This is the default instantiation.
+    </aura:example>
+</aura:documentation>

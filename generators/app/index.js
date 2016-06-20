@@ -2,31 +2,34 @@
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
+var _ = require('lodash');
+var path = require('path');
+var mkdirp = require('mkdirp');
 
 module.exports = yeoman.Base.extend({
-  prompting: function () {
-    // Have Yeoman greet the user.
-    this.log(yosay(
-      'Welcome to the kryptonian ' + chalk.red('generator-sflightning') + ' generator!'
-    ));
+  // prompting: function () {
+  //   this.log(yosay(
+  //     'Welcome to the ' + chalk.red('generator-sflightning') + ' generator!'
+  //   ));
 
-    var prompts = [{
-      type: 'confirm',
-      name: 'someAnswer',
-      message: 'Would you like to enable this option?',
-      default: true
-    }];
+  //   var prompts = [{
+  //     type: 'confirm',
+  //     name: 'someAnswer',
+  //     message: 'Would you like to enable this option?',
+  //     default: true
+  //   }];
 
-    return this.prompt(prompts).then(function (props) {
-      // To access props later use this.props.someAnswer;
-      this.props = props;
-    }.bind(this));
-  },
+  //   return this.prompt(prompts).then(function (props) {
+  //     // To access props later use this.props.someAnswer;
+  //     this.props = props;
+  //   }.bind(this));
+  // },
 
   writing: function () {
+    mkdirp.sync('metadata/aura/Component/');
     this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
+      this.templatePath('Component.cmp'),
+      this.destinationPath('metadata/aura/Component/Component.cmp')
     );
   },
 
