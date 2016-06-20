@@ -1,0 +1,5 @@
+<aura:documentation>
+    <aura:description>
+        <p><%= whatItDoes %></p>
+    </aura:description>
+</aura:documentation>

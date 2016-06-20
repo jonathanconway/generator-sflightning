@@ -22,7 +22,7 @@ module.exports = yeoman.Base.extend({
 
   prompting: function () {
     this.log(yosay(
-      'Welcome to the ' + chalk.red('generator-sflightning') + ' generator!'
+      'Welcome to the ' + chalk.red('generator-sflightning') + ' component generator!'
     ));
 
     var prompts = [{
