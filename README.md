@@ -22,7 +22,9 @@ mkdir my-new-project && cd my-new-project
 ## Generating new apps
 ```bash
 # Run the app generator
-yo sflightning
+yo sflightning Car 'Drives you from A to B'
+# ...or you can call it without params, to get prompted for the name and description...
+# yo sflightning
 ```
 
 ## Generating new components
@@ -30,5 +32,7 @@ yo sflightning
 # After setup of course :)
 # cd my-new-project
 # Run the component generator
-yo sflightning:component
+yo sflightning:component Engine 'Powers the car'
+# ...or you can call it without params, to get prompted for the name and description...
+# yo sflightning:component
 ```
